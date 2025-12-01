@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Категория 1</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .sidebar {
+            background-color: #212529;
+            color: white;
+            padding: 1rem;
+            height: 100vh;
+            position: fixed;
+            width: 200px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+        }
+        .sidebar a.active {
+            background-color: #0d6efd;
+        }
+        .card {
+            border: 1px solid #dee2e6;
+            border-radius: 0.375rem;
+            transition: transform 0.1s linear;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #0d6efd;
+            margin: 0.5rem 0;
+        }
+        .btn-buy {
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="p-5">
+    <!-- Боковое меню -->
+    <div class="sidebar">
+        <h5>Меню</h5>
+        <a href="#" class="active">Главная</a>
+        <a href="#">Категории</a>
+        <a href="#">Заказы</a>
+        <a href="#">Контакты</a>
+        <hr class="my-3">
+        <a href="#">Профиль</a>
+        <a href="#">Выход</a>
+        <div class="mt-3">
+            <span>Пользователь</span>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container-fluid" style="margin-left: 200px;">
+        <h1 class="mb-4 text-center">Категория 1</h1>
+
+        <div class="row">
+            <!-- Карточка товара 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <div class="price">$100</div>
+                        <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                        <button class="btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка товара 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <div class="price">$100</div>
+                        <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                        <button class="btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка товара 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <div class="price">$100</div>
+                        <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                        <button class="btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Карточка товара 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <div class="price">$100</div>
+                        <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                        <button class="btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка товара 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <div class="price">$100</div>
+                        <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                        <button class="btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка товара 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <div class="price">$100</div>
+                        <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                        <button class="btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
