@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Контакты</title>
     <!-- Подключение Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -59,35 +59,41 @@
     <div class="content">
         <h1 class="mb-4 text-center">Контакты</h1>
 
-        <!-- Форма обратной связи -->
-        <div class="row">
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Имя</label>
-                        <input type="text" class="form-control" id="name" placeholder="Введите имя">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Почта</label>
-                        <input type="email" class="form-control" id="email" placeholder="Введите email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Сообщение</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Ваше сообщение"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
-                </form>
-            </div>
+        <!-- ОБЁРТКА ДЛЯ ЦЕНТРИРОВАНИЯ (КЛЮЧЕВОЙ БЛОК) -->
+        <div class="d-flex justify-content-center">
+            <div class="col-10"> <!-- Колонка шириной 8/12 для размещения основного контента -->
 
-            <!-- Блок с контактами -->
-            <div class="col-md-6">
-                <h3>Наши контакты</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
-                </p>
+                <!-- Форма обратной связи -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Почта</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea class="form-control" id="message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+
+                    <!-- Блок с контактами -->
+                    <div class="col-md-6">
+                        <h3>Наши контакты</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
