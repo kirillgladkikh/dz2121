@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Контакты</title>
     <!-- Подключение Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 20px;
         }
         .sidebar {
             background-color: #212529;
             color: white;
-            padding: 1rem;
             height: 100vh;
             position: fixed;
-            width: 200px;
+            width: 220px;
+            padding: 1rem;
         }
         .sidebar a {
             color: white;
             text-decoration: none;
             display: block;
-            padding: 0.5rem 0;
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
         }
         .sidebar a.active {
             background-color: #0d6efd;
@@ -42,7 +44,7 @@
 <body>
     <!-- Боковое меню -->
     <div class="sidebar">
-        <h5>Меню</h5>
+        <h5 class="mb-4">Меню</h5>
         <a href="#" class="active">Главная</a>
         <a href="#">Категории</a>
         <a href="#">Заказы</a>
@@ -50,7 +52,7 @@
         <hr class="my-3">
         <a href="#">Профиль</a>
         <a href="#">Выход</a>
-        <div class="mt-3">
+        <div class="mt-4">
             <span>Пользователь</span>
         </div>
     </div>
